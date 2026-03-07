@@ -32,9 +32,6 @@
 <li class="nav-item">
 <a class="nav-link" href="./gpa">GPA Simulator</a>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="./users">Users</a>
-</li>
 </ul>
 </div>
 </nav>

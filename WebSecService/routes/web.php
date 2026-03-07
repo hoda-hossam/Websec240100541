@@ -31,3 +31,60 @@ Route::get('/minitest', function () {
 
     return view('minitest', compact('bill'));
 });
+
+Route::get('/transcript', function () {
+
+    $courses = [
+        ["code"=>"CS101","title"=>"Programming","grade"=>"A"],
+        ["code"=>"CS102","title"=>"Database","grade"=>"B+"],
+        ["code"=>"CS103","title"=>"Networks","grade"=>"A-"],
+        ["code"=>"CS104","title"=>"Security","grade"=>"B"]
+    ];
+
+    return view('transcript', compact('courses'));
+});
+
+Route::get('/products', function () {
+
+    $products = [
+
+        [
+        "name"=>"Laptop",
+        "price"=>15000,
+        "image"=>"https://via.placeholder.com/200",
+        "desc"=>"High performance laptop"
+        ],
+
+        [
+        "name"=>"Phone",
+        "price"=>8000,
+        "image"=>"https://via.placeholder.com/200",
+        "desc"=>"Smart phone"
+        ],
+
+        [
+        "name"=>"Headphones",
+        "price"=>500,
+        "image"=>"https://via.placeholder.com/200",
+        "desc"=>"Wireless headphones"
+        ]
+
+    ];
+
+    return view('products', compact('products'));
+});
+
+Route::get('/calculator', function () {
+    return view('calculator');
+});
+
+Route::get('/gpa', function () {
+
+    $courses = [
+        ["code"=>"CS101","title"=>"Programming","hours"=>3],
+        ["code"=>"CS102","title"=>"Database","hours"=>3],
+        ["code"=>"CS103","title"=>"Networks","hours"=>2],
+    ];
+
+    return view('gpa', compact('courses'));
+});

@@ -6,7 +6,6 @@
 
 <div class="container">
 
-<!-- Add Product Button -->
 <div class="row mb-2">
     <div class="col col-10">
         <h1>Products</h1>
@@ -16,7 +15,6 @@
     </div>
 </div>
 
-<!-- Search Form -->
 <form method="GET" action="{{ route('products_list') }}">
 <div class="row mb-3">
 
@@ -62,7 +60,6 @@
 </div>
 </form>
 
-<!-- Products List -->
 @foreach($products as $product)
 <div class="card mb-2">
 <div class="card-body">

@@ -17,6 +17,9 @@
 <li class="nav-item">
 <a class="nav-link" href="./multable">Multiplication Table</a>
 </li>
+<li class="nav-item">
+<a class="nav-link" href="./minitest">Mini Test</a>
+</li>
 </ul>
 </div>
 </nav>
